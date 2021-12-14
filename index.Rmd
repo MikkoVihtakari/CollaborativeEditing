@@ -53,7 +53,7 @@ At the moment I share the editable text on Google Docs. For larger projects with
 
 Markdown text is generally just text with exception of R code chunks, references, and mathematical formulas. You may edit the text as you please, but please do not edit the code parts if you do not know what you are doing. For advanced users, the mathematical formulas behave identically to [LaTeX](https://en.wikibooks.org/wiki/LaTeX/Mathematics), while the [citations](https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html) and [cross-references](https://bookdown.org/yihui/rmarkdown-cookbook/cross-ref.html) have their own syntax. 
 
-```{r googledocs, fig.cap = "An example of the Google Docs window. Use suggesting mode (top left) and comment your name to one of your revisions if you do not log in using a Google account. The language of the document will be determined based on your Google settings. Do not worry about it.", out.width='80%', echo = FALSE}
+```{r googledocs, fig.cap = "An example of the Google Docs window. Use suggesting mode (top right) and comment your name to one of your revisions if you do not log in using a Google account. The language of the document will be determined based on your Google settings (do not worry about it). Google Docs are saved automatically after each edit as long as you are online.", out.width='80%', echo = FALSE}
 knitr::include_graphics("figures/google_docs.png")
 ```
 
