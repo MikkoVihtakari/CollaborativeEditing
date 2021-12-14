@@ -11,7 +11,6 @@ output:
     variant: markdown+simple_table
     fig_caption: true
     number_sections: false
-    code_folding: hide
 ---
 
 ```{r setup, include=FALSE}
@@ -44,7 +43,9 @@ The main benefit of using [Google Docs](https://www.google.com/docs/about/) (or 
 
 The pdf file is or will be formatted for the target journal.  This file is where you **see figures and tables**. You will also see the text as output from R meaning that all numbers are shown as numbers and citations as citations. If the numbers are wrong or look weird, please let the lead author know. As a coauthor, you do not need to worry about text formatting but you may comment on the figure, table, and reference list formatting especially if these do not follow the style of the journal (unless you are asked not to do so in early phases of manuscript preparation).
 
-Figure 1: an example of pdf after evaluating (=knitting) the Rmarkdown code
+```{r pdffile, fig.cap = "An example of pdf after evaluating (=knitting) the Rmarkdown code.", out.width='80%', echo = FALSE}
+knitr::include_graphics("figures/pdf.png")
+```
 
 # Google Docs {#googledocs}
 
@@ -52,9 +53,11 @@ At the moment I share the editable text on Google Docs. For larger projects with
 
 Markdown text is generally just text with exception of R code chunks, references, and mathematical formulas. You may edit the text as you please, but please do not edit the code parts if you do not know what you are doing. For advanced users, the mathematical formulas behave identically to [LaTeX](https://en.wikibooks.org/wiki/LaTeX/Mathematics), while the [citations](https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html) and [cross-references](https://bookdown.org/yihui/rmarkdown-cookbook/cross-ref.html) have their own syntax. 
 
-Figure 2: Google docs
+```{r googledocs, fig.cap = "An example of the Google Docs window. Use suggesting mode (top left) and comment your name to one of your revisions if you do not log in using a Google account. The language of the document will be determined based on your Google settings. Do not worry about it.", out.width='80%', echo = FALSE}
+knitr::include_graphics("figures/google_docs.png")
+```
 
-The link you received should take you automatically to suggestion mode (Figure 2). If this is not the case, please change to suggestion mode in the right top corner so that the lead author can easier keep track of changes made to the document. If you are not logging in with your Google account, your comments will be marked as anonymous or whatever it is called in your language. Please place a comment on one of your edits clarifying who has edited the document to make it easier for the lead author to track contributions. 
+The link you received should take you automatically to suggestion mode (Figure \@ref(fig:googledocs)). If this is not the case, please change to suggestion mode in the right top corner so that the lead author can easier keep track of changes made to the document. If you are not logging in with your Google account, your comments will be marked as anonymous or whatever it is called in your language. Please place a comment on one of your edits clarifying who has edited the document to make it easier for the lead author to track contributions. 
 
 ## References
 
@@ -72,10 +75,8 @@ If you are not able to do the edits online, you may use the offline mode. Your e
 
 If Google Docs does not work for you, for example, because you prefer to edit offline or want to look at the formatted document, there are alternatives:
 
-1. You may download the document as a Word file and use track changes in MS Word (or similar software, Figure 3). You can then send the edited document to the lead author. Please note, however, that this way of collaborating will increase the workload of the lead author and editing on Google Docs is the preferred method.
+1. You may [download the document as a Word file](wikihow.com/Download-Google-Docs) and use track changes in MS Word (or similar software). You can then send the edited document to the lead author. Please note, however, that this way of collaborating will increase the workload of the lead author and editing on Google Docs is the preferred method.
 2. If you want to comment on the formatted pdf document, you may refer to line numbers as if reviewing a manuscript, edit the pdf document using a [pdf editor](https://www.digitaltrends.com/computing/best-pdf-editors/) or annotate by hand and scan the annotations. Please note that especially the hand-writing and scanning option will be a considerable burden for the lead author and any other method is preferred.
-
-Figure 3: downloading the doc
 
 # Authorship
 
