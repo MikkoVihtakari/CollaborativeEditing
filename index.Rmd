@@ -41,7 +41,7 @@ The main benefit of using [Google Docs](https://www.google.com/docs/about/) (or 
 
 # The pdf file {#pdf}
 
-The pdf file is or will be formatted for the target journal.  This file is where you **see figures and tables**. You will also see the text as output from R meaning that all numbers are shown as numbers and citations as citations. If the numbers are wrong or look weird, please let the lead author know. As a coauthor, you do not need to worry about text formatting but you may comment on the figure, table, and reference list formatting especially if these do not follow the style of the journal (unless you are asked not to do so in early phases of manuscript preparation).
+The pdf file is or will be formatted for the target journal. This file is where you **see figures and tables** (Figure \@ref(fig:pdffile)). You will also see the text as output from R meaning that all numbers are shown as numbers and citations as citations. If the numbers are wrong or look weird, please let the lead author know. As a coauthor, you do not need to worry about text formatting but you may comment on the figure, table, and reference list formatting especially if these do not follow the style of the journal (unless you are asked not to do so in early phases of manuscript preparation).
 
 ```{r pdffile, fig.cap = "An example of pdf after evaluating (=knitting) the Rmarkdown code.", out.width='80%', echo = FALSE}
 knitr::include_graphics("figures/pdf.png")
